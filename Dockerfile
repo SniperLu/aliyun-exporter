@@ -1,12 +1,12 @@
 FROM python:3-slim
 
-LABEL maintainer="rayingecho@gmail.com"
+LABEL maintainer="mikeluwen@gmail.com"
 
 WORKDIR /usr/src/app
 
 COPY . /usr/src/app/
 RUN pip install -e .
 
-EXPOSE 9522
+EXPOSE 9525
 
-ENTRYPOINT ["python", "-u", "/usr/local/bin/aliyun-exporter"]
+ENTRYPOINT ["python", "-u", "/usr/local/bin/aliyun-exporter", "-c", "/etc/aliyun-exporter.yml"]

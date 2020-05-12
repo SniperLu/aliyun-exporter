@@ -36,6 +36,7 @@ setup(
         'ratelimiter',
         'flask',
         'cachetools',
+        'werkzeug==0.16.0',
         'aliyun-python-sdk-ecs==4.16.5',
         'aliyun-python-sdk-rds==2.3.2',
         'aliyun-python-sdk-r-kvstore==2.0.5',
